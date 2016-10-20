@@ -1,0 +1,19 @@
+{
+	"comment": "",
+	"ignore": "",
+	"package": [
+		{
+			"checksumSHA1": "skPPYkF0j1eqYt4j/uFavVIYQlg=",
+			"path": "github.com/open-falcon/common/model",
+			"revision": "7d271efe20680be69770fe6d56dc781e5385a5f2",
+			"revisionTime": "2015-08-24T05:23:41Z"
+		},
+		{
+			"checksumSHA1": "KB8Kcyx85OMt19yKtwQO3ig+j/0=",
+			"path": "github.com/open-falcon/common/utils",
+			"revision": "b9ba65549217ef89b4d1d05d8eb58fe493e5f982",
+			"revisionTime": "2016-09-12T14:56:37Z"
+		}
+	],
+	"rootPath": "k8s.io/heapster"
+}

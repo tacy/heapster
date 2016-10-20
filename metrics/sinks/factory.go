@@ -29,6 +29,7 @@ import (
 	"k8s.io/heapster/metrics/sinks/log"
 	"k8s.io/heapster/metrics/sinks/metric"
 	"k8s.io/heapster/metrics/sinks/monasca"
+	"k8s.io/heapster/metrics/sinks/openfalcon"
 	"k8s.io/heapster/metrics/sinks/opentsdb"
 	"k8s.io/heapster/metrics/sinks/riemann"
 )
@@ -58,6 +59,8 @@ func (this *SinkFactory) Build(uri flags.Uri) (core.DataSink, error) {
 		return riemann.CreateRiemannSink(&uri.Val)
 	case "opentsdb":
 		return opentsdb.CreateOpenTSDBSink(&uri.Val)
+	case "openfalcon":
+		return openfalconsink.CreateOpenfalconSink(&uri.Val)
 	case "elasticsearch":
 		return elasticsearch.NewElasticSearchSink(&uri.Val)
 	default:
